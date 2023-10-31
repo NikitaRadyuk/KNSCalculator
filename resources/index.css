@@ -1,0 +1,611 @@
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: black;
+}
+
+td{
+    margin: 15px;
+}
+
+.aboutUsPage {
+    max-width: 100%;
+    min-height: 1100px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutUsPageContent{
+    min-height: 1000px;
+    background-color: #D9D9D9;
+    margin-top:82px;
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutUsPageContent-title{
+    color: black;
+    font-size: 64px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.aboutUsPageContent-description{
+    color: black;
+    font-size: 32px;
+    font-weight: normal;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+
+.aboutUsPageContent-rectangle{
+    width: 105%;
+    height: 100%;
+    background-color: #D9D9D9;
+    margin-top: 150px;
+    margin-left: 90px;
+}
+
+.aboutUsPageContent-triangle{
+    width: 0px;
+    height: 0px;
+    border-top: 1000px solid #D9D9D9;
+    border-right: 350px solid transparent;
+}
+
+.address{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+.beautifulRedBtn {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-weight: normal;
+    background-color: red;
+    width: 60%;
+    margin-top: 30px;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    transition: all .2s;
+}
+
+.beautifulRedBtn:hover {
+    background-color: #ff4e4e;
+    transform: scale(1.03);
+}
+
+canvas{
+    border:1px solid black;
+
+}
+
+.calculatorPage{
+    max-width: 100%;
+    min-height: 1025px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.CalculatorPageContent{
+    min-height: 1000px;
+    background-color: #D9D9D9;
+    margin-top:82px;
+    display: flex;
+    flex-direction: row;
+}
+
+.company-address{
+    color: #000;
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 45px;
+    margin-left: 25px;
+}
+
+.contacts-background{
+    display: flex;
+    background-color: white;
+    z-index: 3;
+    min-width: 50%;
+    margin-left: -10%;
+}
+
+.contacts-content-rectangle{
+    display: flex;
+    height: 60%;
+    min-width: 90%;
+    position: absolute;
+    z-index: 5;
+    padding-top: 5%;
+    margin-left: 10%;
+}
+
+.contactsTitle{
+    color: #000;
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.contactsPage{
+    max-width: 100%;
+    min-height: 1500px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactsGroup{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.contactsPageContent{
+    min-height: 1200px;
+    background-color: #D9D9D9;
+    margin-top:82px;
+    display: flex;
+    flex-direction: row;
+}
+
+.feedback-background{
+    position: relative;
+    background-color: #404040;
+    min-width: 50%;
+    min-height: 150%;
+    z-index: 4;
+}
+
+.feedbackGroup{
+    display: flex;
+    flex-direction: column;
+    min-width: 40%;
+}
+
+.feedbackTitle{
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 2%;
+}
+
+.footer-rights{
+    max-width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: #D9D9D9;
+}
+
+.footer__item{
+    max-width: 300px;
+}
+
+.footer__item-text{
+    font-size: 20px;
+}
+
+.gradient-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, #666 0%, rgba(110, 110, 110, 0.85) 36.98%, rgba(217, 217, 217, 0.00) 100%);
+    z-index: 4;
+}
+
+.image-container{
+    position: relative;
+    display: inline-block;
+}
+
+.header {
+    max-width: 100%;
+    z-index: 999;
+    background-color: #FFFFFF;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+}
+
+.header-menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.headerMenu-item {
+    margin-right: 74px;
+    margin-top: 10px;
+}
+
+.headerMenu-item a{
+    color: black;
+    text-align: center;
+    font-size: 24px;
+
+}
+
+.headerMenu-item a:hover{
+    border-bottom: 3px solid #ff4e4e;
+}
+
+input[type="text"]{
+    padding-left: 4%;
+    background-color: #545454;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    border: none;
+    margin-bottom: 7%;
+    margin-right: 15%;
+    min-height: 5vh;
+    min-width: 55%;
+    width: 40%;
+    border-radius: 15px;
+}
+
+input[type="text"]:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: lightcoral;
+    box-shadow: 0 0 5px lightcoral;
+}
+
+input[type="text"]::placeholder{
+    color: #D9D9D9;
+}
+
+input[type="text"]::selection{
+    background-color: #D9D9D9;
+    color: dimgray;
+}
+
+textarea{
+    background-color: #545454;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    border: none;
+    margin-bottom: 7%;
+    min-height: 5vh;
+    min-width: 55%;
+    width: 40%;
+    border-radius: 15px;
+    resize: none;
+    height: 10em;
+    padding-left: 4%;
+    padding-top: 3%;
+}
+
+textarea:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+textarea:focus{
+    outline: none;
+    border-color: lightcoral;
+    box-shadow: 0 0 5px lightcoral;
+}
+
+textarea::placeholder{
+    color: #D9D9D9;
+}
+
+textarea::selection{
+    background-color: #D9D9D9;
+    color: dimgray;
+}
+
+.line {
+    background-color: red;
+    width: 250px;
+    height: 5px;
+    margin-bottom: 21px;
+}
+
+.logo{
+    margin-left: 70px;
+}
+
+.mainPage {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: 2000px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+.mainPage-image{
+    background-image: url("assets/MapsMain.png");
+    background-repeat: no-repeat;
+    min-width: 100vw;
+}
+
+.mainPageContent {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 1100px;
+}
+
+.mainPageContent-container {
+    padding-top: 5%;
+    padding-left: 82px;
+    width: 1062px;
+    z-index: 10;
+}
+
+.mainPageContent-description {
+    color: black;
+    font-size: 34px;
+    font-weight: normal;
+    width: 750px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: justify;
+    z-index: 12;
+}
+
+.mainPageContent-title {
+    color: #000;
+    font-size: 64px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    z-index: 12;
+
+}
+
+.mail{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+.mail-link{
+    color: #000;
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 45px;
+    margin-left: 25px;
+}
+
+#map{
+    width: 100%;
+    height: 50%;
+}
+
+#menuToggle{
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 30px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle a{
+    padding-left: 100px;
+    padding-top: 300px;
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
+}
+
+#menuToggle a:first-child{
+    padding: 200px;
+}
+
+#menuToggle a:hover{
+    color: tomato;
+}
+
+#menuToggle input{
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    z-index: 2;
+
+    -webkit-touch-callout: none;
+}
+
+#menuToggle span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: black;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    opacity 0.55s ease;
+}
+
+#menuToggle span:first-child{
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2){
+    transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span{
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: black;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+    position: absolute;
+    padding-top: 100px;
+    padding-left: -30px;
+    width: 500px;
+    min-height: 1500px;
+    margin: -100px 0 0 -30px;
+    height: 100%;
+    background: white;
+    border: 1px solid black;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+    padding: 0px 100px;
+    margin-bottom: 0px;
+    font-size: 46px;
+}
+
+#menuToggle input:checked ~ ul
+{
+    transform: none;
+}
+
+.modalMenu
+{
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family: "Montserrat", sans-serif;
+
+    z-index: 6;
+    border: 3px solid black;
+}
+
+.moreInfo {
+    margin-top: 1px;
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.moreInfo_container {
+    color: white;
+    max-width: 938px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 0;
+}
+
+.moreInfo_item-title {
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.phone{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+.phoneNumber{
+    color: #000;
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 45px;
+    margin-left: 25px;
+}
+
+@media screen and (max-width: 1100px){
+    .headerMenu-item a{
+        display: none;
+    }
+
+    main .mainPageContent{
+        padding: 70px 0 70px 0;
+    }
+
+    main .mainPageContent p{
+        font-size: 14px;
+    }
+}
+
+
+
+

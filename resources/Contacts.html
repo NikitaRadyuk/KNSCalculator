@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Contacts</title>
+</head>
+<body>
+<div class="contactsPage">
+  <div class="header">
+  <div class="header-content">
+    <div class="modal-content">
+
+      <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox"/>
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a href="MainPage.html" ><li>Главная</li></a>
+            <a href="Calculator.html" ><li>Калькулятор</li></a>
+            <a href="AboutUs.html" ><li>О нас</li></a>
+            <a href="Contacts.html" ><li>Контакты</li></a>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+
+    <div class="logo">
+      <img src="assets/logo.png" alt="logo">
+    </div>
+  </div>
+
+      <ul class="header-menu">
+        <li class="headerMenu-item">
+          <a href="MainPage.html">Главная</a>
+        </li>
+        <li class="headerMenu-item">
+          <a href="Calculator.html">Калькулятор</a>
+        </li>
+        <li class="headerMenu-item">
+          <a href="AboutUs.html">О нас</a>
+        </li>
+        <li class="headerMenu-item">
+          <a href="Contacts.html">Контакты</a>
+        </li>
+      </ul>
+</div>
+
+  <div class="contactsPageContent">
+
+    <div class="feedback-background"></div>
+
+      <div class="contacts-content-rectangle">
+
+        <div class="feedbackGroup">
+          <label class="feedbackTitle">Обратная связь:</label>
+
+          <div class="line" style="min-width: 40%; min-height: 3px; margin-bottom: 5%"></div>
+
+          <input type="text" class="yourNameInputField" id="yourNameField" placeholder="Ваше имя" maxlength="100">
+
+          <input type="text" class="yourEmailInputField" id="yourEmailField" placeholder="Ваша электронная почта" maxlength="150">
+
+          <textarea id="messageTxtArea" name="yourMessage" placeholder="Ваше сообщение..."></textarea>
+
+          <div class="beautifulRedBtn" style=" min-width: 55%; width: 40%;">Отправить</div>
+        </div>
+
+        <div class="contacts-background">
+
+          <div class="contactsGroup">
+            <label class="contactsTitle">Контакты:</label>
+
+            <div class="phone">
+              <img src="assets/A1.jpg" width="50" height="50">
+              <label class="phoneNumber">A1: +375 29 656-77-21</label>
+            </div>
+
+            <div class="phone">
+              <img src="assets/mts.jpg" width="50" height="50">
+              <label class="phoneNumber">МТС: +375 29 765-63-35</label>
+            </div>
+
+            <div class="mail">
+              <img src="assets/emailIcon.png" width="50" height="50">
+              <label class="mail-link">passmat.by@gmail.com</label>
+            </div>
+
+            <div class="address">
+              <img src="assets/gpsIcon.png" width="50" height="50">
+              <label class="company-address">220021 Республика Беларусь, г.Минск,
+                ул. Лазо, 3, кабинет 2</label>
+            </div>
+
+        </div>
+
+          <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2352.394564579536!2d27.657410477455148!3d53.871413072446245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcde4f4eb1a57%3A0x1d404b651410bf3!2z0YPQuy4g0JvQsNC30L4gMywg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1691661304393!5m2!1sru!2sby" width="100%" height="859.5" style="border: 2px solid gray;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+  <div class="moreInfo">
+      <div class="moreInfo_container">
+          <div class="footer__item">
+              <div class="moreInfo_item-title">Юридический адрес</div>
+              <div class="line"></div>
+              <div class="footer__item-text">220021 Республика Беларусь, г.Минск,
+                ул. Лазо, 3, кабинет 2</div>
+          </div>
+
+          <div class="footer__item">
+              <div class="moreInfo_item-title">Контакты</div>
+                  <div class="line"></div>
+                  <table>
+                    <tbody>
+                    <tr>
+                        <td><div class="footer__item-text">A1:</div></td>
+                        <td><div class="footer__item-text">+375 29 656-77-21</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="footer__item-text">МТС:</div></td>
+                        <td><div class="footer__item-text">+375 29 765-63-35</div></td>
+                    </tr>
+                    </tbody>
+                  </table>
+          </div>
+
+          <div class="footer__item">
+            <div class="moreInfo_item-title">E-MAIL</div>
+            <div class="line"></div>
+            <div class="footer__item-text">passmat.by@gmail.com</div>
+          </div>
+      </div>
+  </div>
+</div>
+
+  <footer><div id="rights" class="footer-rights">
+    <script>
+      var currentYear = new Date().getFullYear();
+      document.write("Все права защищены &copy; " + currentYear)
+    </script>
+  </div></footer>
+</div>
+</body>
+</html>
