@@ -364,7 +364,7 @@ textarea::selection{
     width: 100%;
 }
 .mainPage-image{
-    background-image: url("assets/MapsMain.png");
+    background-image: url("../../resources/assets/MapsMain.png");
     background-repeat: no-repeat;
     min-width: 100vw;
 }
