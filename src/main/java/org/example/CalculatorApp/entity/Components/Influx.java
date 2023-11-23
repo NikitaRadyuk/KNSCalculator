@@ -1,5 +1,6 @@
 package org.example.CalculatorApp.entity.Components;
 
+import org.example.CalculatorApp.entity.Circle;
 import org.example.CalculatorApp.entity.Line;
 import org.example.CalculatorApp.entity.Point;
 import org.example.CalculatorApp.entity.interfaces.IComponent;
@@ -14,7 +15,7 @@ public class Influx implements IComponent {
     public Integer angle;
     public Double diam;
     public Double diamKNS;
-    private final Double INFLUX_LENGTH = 2800.0;
+    private final Double INFLUX_LENGTH = 900.0;
     public Double trashLength;
     public Double trashHeight;
     public Double trashDepth;
@@ -35,6 +36,13 @@ public class Influx implements IComponent {
         this.trashVisible = trashVisible;
     }
 
+    private List<IShape> drawWell(){
+        List<IShape> well = new ArrayList<>();
+        well.add(new Circle(diamKNS,new Point(0,0)));
+        well.add(new Circle(diamKNS-75,new Point(0,0)));
+        return well;
+    }
+
     private List<IShape> drawTrash(){
         List<IShape> musor = new ArrayList<>();
 
@@ -43,12 +51,12 @@ public class Influx implements IComponent {
         Double cos = Math.cos(-angle * Math.PI/180);
         Double sin = Math.sin(-angle * Math.PI/180);
 
-        points.add(new Point(diamKNS/2, trashHeight/2));
-        points.add(new Point(diamKNS/2, -trashHeight/2));
-        points.add(new Point(diamKNS/2 - trashLength, -trashHeight/2));
-        points.add(new Point(diamKNS/2 - trashLength, trashHeight/2));
-        points.add(new Point(diamKNS/2 - TRASH_FASTENING, trashHeight/2));
-        points.add(new Point(diamKNS/2 - TRASH_FASTENING, -trashHeight/2));
+        points.add(new Point(diamKNS - 125, trashHeight/2));
+        points.add(new Point(diamKNS - 125, -trashHeight/2));
+        points.add(new Point(diamKNS - trashLength - 125, -trashHeight/2));
+        points.add(new Point(diamKNS - trashLength - 125, trashHeight/2));
+        points.add(new Point(diamKNS - TRASH_FASTENING - 125, trashHeight/2));
+        points.add(new Point(diamKNS - TRASH_FASTENING - 125, -trashHeight/2));
 
         for (var p:
              points) {
@@ -74,10 +82,10 @@ public class Influx implements IComponent {
 
         List<Point> points = new ArrayList<>();
 
-        points.add(new Point(diamKNS/2- TRASH_FASTENING, -diam/2));
-        points.add(new Point(diamKNS/2- TRASH_FASTENING, diam/2));
-        points.add(new Point(diamKNS/2 - TRASH_FASTENING + INFLUX_LENGTH, diam/2));
-        points.add(new Point(diamKNS/2 - TRASH_FASTENING + INFLUX_LENGTH, -diam/2));
+        points.add(new Point(diamKNS - TRASH_FASTENING - 125, -diam/2));
+        points.add(new Point(diamKNS - TRASH_FASTENING - 125, diam/2));
+        points.add(new Point(diamKNS - TRASH_FASTENING + INFLUX_LENGTH - 125, diam/2));
+        points.add(new Point(diamKNS - TRASH_FASTENING + INFLUX_LENGTH - 125, -diam/2));
 
         for (var p:
                 points) {
@@ -104,6 +112,8 @@ public class Influx implements IComponent {
         if(trashVisible){
             influx.addAll(drawTrash());
         }
+
+        influx.addAll(drawWell());
 
         influx.addAll(drawInflux());
 

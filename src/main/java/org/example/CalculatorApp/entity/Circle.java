@@ -8,7 +8,6 @@ import java.util.Objects;
 public class Circle implements IShape {
     private Double radius;
     private Point centerPoint;
-    public final Double scale = 0.5;
 
     public Circle() {
     }
@@ -65,9 +64,9 @@ public class Circle implements IShape {
 
     @Override
     public void drawToSVG(SVGBuilder svgBuilder) {
-        String circle = "<circle cx=\"" + centerPoint.x * scale
-                + "\" cy=\"" + centerPoint.y * scale
-                + "\" r=\"" + radius * scale + "\" fill=\"none\" stroke=\"#b38600\" vector-effect=\"non-scaling-stroke\" stroke-width=\"5\"></circle>";
+        String circle = "<circle cx=\"" + centerPoint.x * svgBuilder.scale
+                + "\" cy=\"" + centerPoint.y * svgBuilder.scale
+                + "\" r=\"" + radius * svgBuilder.scale + "\" fill=\"none\" stroke=\"#b38600\" vector-effect=\"non-scaling-stroke\" stroke-width=\"2\"></circle>";
         svgBuilder.append(circle);
     }
 }

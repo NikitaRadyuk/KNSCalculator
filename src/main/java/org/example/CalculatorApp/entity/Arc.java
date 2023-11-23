@@ -11,8 +11,6 @@ public class Arc implements IShape {
     private Point startPoint;
     private Point endPoint;
 
-    public final Double scale = 0.5;
-
     public Arc() {
     }
 
@@ -80,13 +78,13 @@ public class Arc implements IShape {
     @Override
     public void drawToSVG(SVGBuilder svgBuilder) {
         String arc;
-            arc = "<path d=\"M" + startPoint.x * scale
-                    + "," + startPoint.y* scale
-                    +"A" + radius * scale
-                    + "," + radius * scale
-                    + " 0 0,1 " + endPoint.x * scale
-                    + ", " + endPoint.y *scale
-                    + "\" fill=\"none\" stroke=\"#b38600\" vector-effect=\"non-scaling-stroke\" stroke-width=\"5\"></path>";
+            arc = "<path d=\"M" + startPoint.x * svgBuilder.scale
+                    + "," + startPoint.y* svgBuilder.scale
+                    +"A" + radius * svgBuilder.scale
+                    + "," + radius * svgBuilder.scale
+                    + " 0 0,1 " + endPoint.x * svgBuilder.scale
+                    + ", " + endPoint.y * svgBuilder.scale
+                    + "\" fill=\"none\" stroke=\"#b38600\" vector-effect=\"non-scaling-stroke\" stroke-width=\"2\"></path>";
         svgBuilder.append(arc);
     }
 }

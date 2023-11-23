@@ -9,8 +9,6 @@ public class Line implements IShape {
     private Point point1;
     private Point point2;
 
-    public final Double scale = 0.5;
-
     public Line() {
     }
 
@@ -67,9 +65,9 @@ public class Line implements IShape {
     @Override
     public void drawToSVG(SVGBuilder svgBuilder) {
 
-        String line = "<line x1=\"" + point1.x * scale
-                + "\" y1=\"" + point1.y * scale + "\" x2=\"" + point2.x * scale
-                + "\" y2=\"" + point2.y * scale+ "\" stroke-width=\"5\" vector-effect=\"non-scaling-stroke\" stroke=\"#b38600\"></line>";
+        String line = "<line x1=\"" + point1.x * svgBuilder.scale
+                + "\" y1=\"" + point1.y * svgBuilder.scale + "\" x2=\"" + point2.x * svgBuilder.scale
+                + "\" y2=\"" + point2.y * svgBuilder.scale+ "\" stroke-width=\"2\" vector-effect=\"non-scaling-stroke\" stroke=\"#b38600\"></line>";
         svgBuilder.append(line);
     }
 }
